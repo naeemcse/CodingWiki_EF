@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingWiki_Web", "CodingWiki_Web\CodingWiki_Web.csproj", "{3F297D87-45DD-4D84-AB84-A5C2BA79F5DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingWiki_DataAccess", "CodingWiki_DataAccess\CodingWiki_DataAccess.csproj", "{55DCAFC0-5BD3-4F34-9D0C-C66C21F6E6A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingWiki_Model", "Coding_Model\CodingWiki_Model.csproj", "{38CF5A87-5383-44BC-8403-73AA5387D45F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3F297D87-45DD-4D84-AB84-A5C2BA79F5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F297D87-45DD-4D84-AB84-A5C2BA79F5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F297D87-45DD-4D84-AB84-A5C2BA79F5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DCAFC0-5BD3-4F34-9D0C-C66C21F6E6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DCAFC0-5BD3-4F34-9D0C-C66C21F6E6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DCAFC0-5BD3-4F34-9D0C-C66C21F6E6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DCAFC0-5BD3-4F34-9D0C-C66C21F6E6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38CF5A87-5383-44BC-8403-73AA5387D45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CF5A87-5383-44BC-8403-73AA5387D45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CF5A87-5383-44BC-8403-73AA5387D45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CF5A87-5383-44BC-8403-73AA5387D45F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
