@@ -3,6 +3,7 @@ using CodingWiki_DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodingWiki_DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251228063728_GenreNameNullBle")]
+    partial class GenreNameNullBle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,56 +50,6 @@ namespace CodingWiki_DataAccess.Migrations
                     b.HasKey("BookId");
 
                     b.ToTable("Books");
-
-                    b.HasData(
-                        new
-                        {
-                            BookId = 1,
-                            Author = "F. Scott Fitzgerald",
-                            ISBN = "9780743273565",
-                            Price = 10.99,
-                            Title = "The Great Gatsby"
-                        },
-                        new
-                        {
-                            BookId = 2,
-                            Author = "Harper Lee",
-                            ISBN = "9780061120084",
-                            Price = 7.9900000000000002,
-                            Title = "To Kill a Mockingbird"
-                        },
-                        new
-                        {
-                            BookId = 3,
-                            Author = "George Orwell",
-                            ISBN = "9780451524935",
-                            Price = 9.9900000000000002,
-                            Title = "1984"
-                        },
-                        new
-                        {
-                            BookId = 4,
-                            Author = "Jane Austen",
-                            ISBN = "9780141439518",
-                            Price = 6.9900000000000002,
-                            Title = "Pride and Prejudice"
-                        },
-                        new
-                        {
-                            BookId = 5,
-                            Author = "J.D. Salinger",
-                            ISBN = "9780316769488",
-                            Price = 8.9900000000000002,
-                            Title = "The Catcher in the Rye"
-                        },
-                        new
-                        {
-                            BookId = 6,
-                            Author = "Naeem",
-                            ISBN = "1111",
-                            Price = 100.0,
-                            Title = "Bangladesh"
-                        });
                 });
 
             modelBuilder.Entity("CodingWiki_Model.Models.Genre", b =>
